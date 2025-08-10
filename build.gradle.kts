@@ -9,7 +9,7 @@ plugins {
     id("me.champeau.jmh") version "0.7.2"
 }
 
-group = "com.kunit"
+group = "io.jspiner"
 version = "1.0.0"
 
 repositories {

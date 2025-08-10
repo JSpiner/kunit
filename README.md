@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.kunit:kunit:1.0.0")
+    implementation("io.jspiner:kunit:1.0.0")
 }
 ```
 
@@ -44,7 +44,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.kunit:kunit:1.0.0'
+    implementation 'io.jspiner:kunit:1.0.0'
 }
 ```
 
@@ -52,7 +52,7 @@ dependencies {
 
 ```xml
 <dependency>
-    <groupId>com.kunit</groupId>
+    <groupId>io.jspiner</groupId>
     <artifactId>kunit</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -66,7 +66,7 @@ dependencies {
 kunit = "1.0.0"
 
 [libraries]
-kunit = { module = "com.kunit:kunit", version.ref = "kunit" }
+kunit = { module = "io.jspiner:kunit", version.ref = "kunit" }
 ```
 
 ```kotlin
@@ -81,10 +81,10 @@ dependencies {
 ### Basic Usage
 
 ```kotlin
-import com.kunit.units.distance.*
-import com.kunit.units.duration.*
-import com.kunit.units.mass.*
-import com.kunit.units.temperature.*
+import io.jspiner.units.distance.*
+import io.jspiner.units.duration.*
+import io.jspiner.units.mass.*
+import io.jspiner.units.temperature.*
 
 fun main() {
     // Creating measurements
@@ -184,7 +184,7 @@ KUnit seamlessly integrates with `java.time` APIs:
 
 ```kotlin
 import java.time.LocalDateTime
-import com.kunit.units.duration.*
+import io.jspiner.units.duration.*
 
 val now = LocalDateTime.now()
 val later = now + 2.hours + 30.minutes
@@ -200,7 +200,7 @@ KUnit also works with `kotlin.time`:
 
 ```kotlin
 import kotlin.time.Duration as KotlinDuration
-import com.kunit.units.duration.*
+import io.jspiner.units.duration.*
 
 val kunitDuration = 1.hours + 30.minutes
 val kotlinDuration = kunitDuration.toKotlinDuration()
