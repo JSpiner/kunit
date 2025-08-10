@@ -5,8 +5,6 @@ package com.kunit.units.mass
  * These provide a natural DSL for working with mass measurements.
  */
 
-// Metric units
-
 val Number.mg: Mass
     get() = Mass(this.toDouble() * 0.001)
 

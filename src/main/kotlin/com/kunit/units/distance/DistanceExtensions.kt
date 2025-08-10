@@ -1,11 +1,6 @@
 package com.kunit.units.distance
 
 /**
- * Extension functions for creating Distance instances from numeric values.
- * These provide a natural DSL for working with distances.
- */
-
-/**
  * Creates a Distance from a Number representing kilometers.
  */
 val Number.km: Distance

@@ -83,7 +83,8 @@ class DistancePropertySpec : DescribeSpec({
         describe("Zero as identity element") {
             it("should have zero as identity: a + 0 = a") {
                 forAll(
-                    Arb.double(0.0, 10000.0), // Distance should be positive
+                    // Distance should be positive
+                    Arb.double(0.0, 10000.0),
                 ) { meters ->
                     val distance = Distance(meters)
                     val zero = Distance(0.0)

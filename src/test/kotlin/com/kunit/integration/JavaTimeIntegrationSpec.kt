@@ -1,9 +1,20 @@
 package com.kunit.integration
 
-import com.kunit.units.duration.*
+import com.kunit.units.duration.Duration
+import com.kunit.units.duration.days
+import com.kunit.units.duration.hours
+import com.kunit.units.duration.microseconds
+import com.kunit.units.duration.milliseconds
+import com.kunit.units.duration.minutes
+import com.kunit.units.duration.seconds
 import io.kotest.core.spec.style.DescribeSpec
 import io.kotest.matchers.shouldBe
-import java.time.*
+import java.time.Instant
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.LocalTime
+import java.time.ZoneId
+import java.time.ZonedDateTime
 
 class JavaTimeIntegrationSpec : DescribeSpec({
     describe("java.time Integration") {

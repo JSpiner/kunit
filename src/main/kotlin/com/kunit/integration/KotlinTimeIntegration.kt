@@ -6,10 +6,6 @@ import kotlin.time.Duration as KotlinDuration
 import kotlin.time.DurationUnit as KotlinDurationUnit
 
 /**
- * Extension functions for integration with kotlin.time.Duration
- */
-
-/**
  * Convert KUnit Duration to kotlin.time.Duration
  */
 fun Duration.toKotlinDuration(): KotlinDuration {

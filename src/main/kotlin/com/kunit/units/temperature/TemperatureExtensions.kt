@@ -4,8 +4,6 @@ package com.kunit.units.temperature
  * Extension functions for creating Temperature instances from numeric values.
  */
 
-// Temperature creation
-
 val Number.celsius: Temperature
     get() = Temperature(this.toDouble())
 

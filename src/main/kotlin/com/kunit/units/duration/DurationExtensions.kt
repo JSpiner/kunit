@@ -5,8 +5,6 @@ package com.kunit.units.duration
  * These provide a natural DSL for working with durations.
  */
 
-// Number extensions
-
 val Number.nanoseconds: Duration
     get() = Duration(this.toDouble() * 1e-9)
 

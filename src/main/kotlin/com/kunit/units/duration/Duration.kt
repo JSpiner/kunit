@@ -78,8 +78,11 @@ value class Duration(override val value: Double) :
     fun toWeeks(): Double = convertTo(TimeUnit.WEEK)
 
     // Shorter aliases for common conversions
+
     fun toNanos(): Double = toNanoseconds()
+
     fun toMicros(): Double = toMicroseconds()
+
     fun toMillis(): Double = toMilliseconds()
 
     override fun toString(): String = "$value s"
