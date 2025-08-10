@@ -38,6 +38,8 @@ jobs:
         flags: unittests
         name: codecov-umbrella
         fail_ci_if_error: false
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_ORG_TOKEN }}
     
     - name: Upload test results
       uses: actions/upload-artifact@v4
